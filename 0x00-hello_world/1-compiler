@@ -1,2 +1,2 @@
-^#!\s*/bin/bash
+#!/bin/bash
 gcc $CFILE -E -o ${$CFILE.*}.o
