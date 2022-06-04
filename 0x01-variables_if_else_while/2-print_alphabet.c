@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Start of execution
@@ -8,7 +9,7 @@
 
 int main(void)
 {
-	char s[30] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\0'};
+	char s[30] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
 	for (i = 0; s[i] != ('\0'); i++)
