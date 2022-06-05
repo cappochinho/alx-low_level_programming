@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (g = 50; g <= 57; g++)
 			{
-				if (e < f < g)
+				if ((e < f) && (f < g))
 				{
 					putchar(e);
 					putchar(f);
