@@ -9,17 +9,17 @@
  */
 int main(void)
 {
-	int i, j;
+	int s, t;
 
-	for (i = 48; i <= 56; i++)
+	for (s = 48; s <= 56; s++)
 	{
-		for (i = 49; i <= 57; i++)
+		for (t = 49; t <= 57; t++)
 		{
-			if (i < j)
+			if (s < t)
 			{
-				putchar(i);
-				putchar(j);
-				if (i != 56 || j != 57)
+				putchar(s);
+				putchar(t);
+				if (s != 56 || t != 57)
 				{
 					putchar(44);
 					putchar(32);
