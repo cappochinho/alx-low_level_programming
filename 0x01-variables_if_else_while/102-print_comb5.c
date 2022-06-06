@@ -1,36 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - Program starts
- * Prints the least of the combination of -
- * three digits in ascending order of magnitude
+ * main - Start of program
+ * Prints all possible combinations of 
+ * two two-digit numbers
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int e, f, g;
-
-	for (e = 48; e <= 55; e++)
+	int s, t;
+	
+	for (s = 0; s < 100; s++)
 	{
-		for (f = 49; f <= 56; f++)
-		{
-			for (g = 50; g <= 57; g++)
-			{
-				if ((e < f) && (f < g))
-				{
-					putchar(e);
-					putchar(f);
-					putchar(g);
-					if (e != 55 || f != 56 || g != 57)
-					{
-						putchar(44);
-						putchar(32);
-					}
-				}
-			}
-		}
+	        for (t = 0; t < 100; t++)
+	        {
+                    if (s < t)
+                    {
+                            putchar((s/10) + 48);
+                            putchar((s%10) + 48);
+                            putchar(32);
+                            putchar((t/10) + 48);
+                            putchar((t%10) + 48);
+                            if (s != 98 || t != 99)
+                            {
+                                    putchar(44);
+                                    putchar(32);
+                            }
+                    }
+	        }
 	}
+	
 	putchar('\n');
 	return (0);
 }
