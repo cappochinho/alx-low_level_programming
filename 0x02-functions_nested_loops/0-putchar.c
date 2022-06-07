@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -9,7 +9,12 @@
  */
 int main(void)
 {
-	int _putchar(_putchar\n);
+	char s[15] = "_putchar";
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		_putchar(s[i]);
+	_putchar('\n');
 
 	return (0);
 }

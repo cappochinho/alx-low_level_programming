@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * print_alphabet - Description
+ * Description: Prints alphabet in lowercase then a newline
+ * Return: No value
+ */
+void print_alphabet(void)
+{
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
+	_putchar('\n');
+}
