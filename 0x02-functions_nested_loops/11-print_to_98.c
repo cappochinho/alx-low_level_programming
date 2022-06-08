@@ -17,6 +17,7 @@ void print_to_98(int n)
 			printf("%i", n);
 			if (n < 98 && n != 98)
 				putchar(44);
+				putchar(32);
 		}
 	}
 
@@ -27,6 +28,7 @@ void print_to_98(int n)
 			printf("%i", n);
 			if (n > 98 && n != 98)
 				putchar(44);
+				putchar(32);
 		}
 	}
 }
