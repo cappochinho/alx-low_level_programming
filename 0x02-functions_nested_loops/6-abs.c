@@ -3,16 +3,18 @@
 /**
  * _abs - Description below
  * Description: Outputs the absoute of a given integer number
- * @int: integer input
+ * @i: integer input
  *
  * Return: Absolute value of input
  */
-int _abs(int)
+int _abs(int i)
 {
-	int i;
+	int abs;
 
 	if (i < 0)
-		return (i + (-2 * i));
+		abs = (i + (-2 * i));
 	else if (i >= 0)
-		return (i);
+		abs = i;
+
+	return (abs);
 }

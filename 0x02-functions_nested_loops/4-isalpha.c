@@ -11,7 +11,6 @@
 int _isalpha(int c)
 {
 	int i;
-	int c;
 	int alpha = 0;
 
 	for (i = 'a'; i <= 'z'; i++)
