@@ -20,6 +20,8 @@ void print_to_98(int n)
 				putchar(44);
 				putchar(32);
 			}
+			else
+				putchar(32);
 		}
 	}
 
@@ -33,6 +35,8 @@ void print_to_98(int n)
 				putchar(44);
 				putchar(32);
 			}
+			else
+				putchar(32);
 		}
 	}
 }
