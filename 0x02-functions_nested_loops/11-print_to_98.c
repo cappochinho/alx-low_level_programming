@@ -14,29 +14,24 @@ void print_to_98(int n)
 	{
 		for (; n <= 98; n++)
 		{
-			printf("%i", n);
-			if (n < 98 && n != 98)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			else
-				putchar(32);
-		}
-	}
+			printf("%d", n);
 
+			if (n == 98)
+				continue;
+			printf(", ");
+		}
+		printf("\n");
+	}
 	else
 	{
 		for (; n >= 98; n--)
 		{
-			printf("%i", n);
-			if (n > 98 && n != 98)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			else
-				putchar(32);
+			printf("%d", n);
+
+			if (n == 98)
+				continue;
+			printf(", ");
 		}
+		printf("\n");
 	}
 }
