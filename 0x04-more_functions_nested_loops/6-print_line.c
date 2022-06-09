@@ -19,9 +19,6 @@ void print_liine(int n)
 			_putchar(95);
 			i++;
 		}
-		_putchar('\n');
 	}
-
-	else
-		_putchar('\n');
+	_putchar('\n');
 }
