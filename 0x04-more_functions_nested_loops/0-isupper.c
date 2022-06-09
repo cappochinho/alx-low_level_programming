@@ -9,12 +9,13 @@
 
 int _isupper(int c)
 {
+	char check = 'A';
 	int upper;
 
 	upper = 0;
-	for (c = 'A'; c <= 'Z'; c++)
+	for (check = 'A'; check <= 'Z'; check++)
 	{
-		if (c != EOF)
+		if (c == check)
 		{
 			upper = 1;
 			break;
