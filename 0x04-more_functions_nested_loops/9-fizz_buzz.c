@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Description below
@@ -24,9 +23,9 @@ int main(void)
 			printf("Fizz");
 		else
 			printf("%i", i);
-		_putchar(' ');
+		putchar(' ');
 	}
-	_putchar('\n');
+	putchar('\n');
 	
 	return (0);
 }
