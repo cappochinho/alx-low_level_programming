@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Description below
@@ -25,6 +26,7 @@ int main(void)
 			printf("%i", i);
 		putchar(' ');
 	}
+	printf('\n');
 
 	return (0);
 }
