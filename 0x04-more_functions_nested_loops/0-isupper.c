@@ -12,7 +12,7 @@ int _isupper(int c)
 	int upper;
 
 	upper = 0;
-	for (c >= 'A'; c <= 'Z'; c++)
+	for (c = 'A'; c <= 'Z'; c++)
 	{
 		if (c != EOF)
 		{
