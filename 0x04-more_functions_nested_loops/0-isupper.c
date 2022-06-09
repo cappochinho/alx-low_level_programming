@@ -17,10 +17,7 @@ int _isupper(int c)
 		if (c != EOF)
 		{
 			upper = 1;
-		}
-		else
-		{
-			upper = 0;
+			break;
 		}
 	}
 	return (upper);
