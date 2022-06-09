@@ -7,14 +7,13 @@
  * Return: No value
  */
 
-void print_liine(int n)
+void print_line(int n)
 {
-	int i;
-
-	i = 1;
+	int i = 0;
+	
 	if (n > 0)
 	{
-		while (i <= n)
+		while (i < n)
 		{
 			_putchar(95);
 			i++;
