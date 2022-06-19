@@ -5,7 +5,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
-#define PASS_LEN 16
+#define PASS_LEN 58
 
 int _putchar(char c);
 void reset_to_98(int *n);
