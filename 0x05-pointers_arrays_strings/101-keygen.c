@@ -10,7 +10,6 @@ int main(void)
 {   
     char letter[] = "abcdefghijklmnopqrstuvwxyz";
     char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    char special[] = "!.@#$^&*?><(";
     char numbers[] = "0123456789";
     char p[PASS_LEN];
     int i = 0, randomizer = 0;
@@ -18,7 +17,7 @@ int main(void)
     srand((unsigned int)(time(NULL)));
     while (i != (PASS_LEN-1))
     {
-        randomizer = rand() % 4;
+        randomizer = rand() % 3;
         switch (randomizer)
         {
             case 1:
@@ -32,11 +31,6 @@ int main(void)
                     continue;
                 }
             case 3:
-                {
-                    p[i] = special[rand() % 12];
-                    continue;
-                }
-            case 4:
                 {
                     p[i] = numbers[rand() % 10];
                     continue;
