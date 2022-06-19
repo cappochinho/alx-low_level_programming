@@ -15,7 +15,7 @@ int main(void)
     int i = 0, randomizer = 0;
 
     srand((unsigned int)(time(NULL)));
-    while (i != (PASS_LEN-1))
+    while (i != (PASS_LEN-2))
     {
         randomizer = rand() % 3;
         switch (randomizer)
@@ -40,8 +40,8 @@ int main(void)
         }
         i++;
     }
-    for (i = 0; i < PASS_LEN; i++)
-        printf("%c", p[i]);
+    p[i] = '\0';
+    printf("%s", p);
 
     return 0;
 }
