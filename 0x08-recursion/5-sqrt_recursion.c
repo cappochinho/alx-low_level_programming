@@ -1,39 +1,30 @@
 #include "main.h"
+int _sqrt(int prev, int root);
 
 /**
- * sqrt_check - Described below
- * Description: Guesses the sqrt of a number
- * @n: integer n
- * @min: min
- * @max: max
- * Return:Square root of n
- */
-
-int sqrt_check(int n, int min, int max)
-{
-	int guess = (min + max) / 2;
-	int squared = guess * guess;
-
-	if (max < min)
-		return (-1);
-
-	if (squared == n)
-		return (guess);
-	else if (squared < n)
-		sqrt_check(n, guess + 1, max);
-	else
-		sqrt_check(n, min, guess - 1);
-	return (0);
-}
-
-/**
- * _sqrt_recursion - Described below
- * Description: Calls another function to find the square root of n
- * @n: Integer input
- * Return: Square root of n
+ * _sqrt_recursion - It returns the value of square root of n.
+ * @n: an input integer
+ * Return: The square root of n
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt_check(n, 1, n));
-	return (0);
+	if (n < 0)
+		return (-1);
+
+	return (_sqrt(1, n));
+}
+
+/**
+ * _sqrt - find square root
+ * @prev: previous value
+ * @root: square root value
+ * Return: the square root
+ */
+int _sqrt(int prev, int root)
+{
+	if (prev > root)
+		return (-1);
+	else if (prev * prev == root)
+		return (prev);
+	return (_sqrt(prev + 1, root));
 }
