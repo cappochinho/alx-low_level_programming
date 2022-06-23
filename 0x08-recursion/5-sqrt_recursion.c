@@ -13,7 +13,7 @@ int sqrt_check(int n, int min, int max)
 {
 	int guess = (min + max) / 2;
 	int squared = guess * guess;
-	
+
 	if (max < min)
 		return (-1);
 
