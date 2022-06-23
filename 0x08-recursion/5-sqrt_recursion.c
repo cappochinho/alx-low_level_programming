@@ -11,13 +11,11 @@
 
 int sqrt_check(int n, int min, int max)
 {
-	if (max < min)
-		return (-1);
-
-	int guess;
+	int guess = (min + max) / 2;
 	int squared = guess * guess;
 	
-	guess = (min + max) / 2;
+	if (max < min)
+		return (-1);
 
 	if (squared == n)
 		return (guess);
