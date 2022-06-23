@@ -14,8 +14,10 @@ int sqrt_check(int n, int min, int max)
 	if (max < min)
 		return (-1);
 
-	int guess = (min + max) / 2;
+	int guess;
 	int squared = guess * guess;
+	
+	guess = (min + max) / 2;
 
 	if (squared == n)
 		return (guess);
@@ -23,6 +25,7 @@ int sqrt_check(int n, int min, int max)
 		sqrt_check(n, guess + 1, max);
 	else
 		sqrt_check(n, min, guess - 1);
+	return (0);
 }
 
 /**
@@ -34,4 +37,5 @@ int sqrt_check(int n, int min, int max)
 int _sqrt_recursion(int n)
 {
 	return (sqrt_check(n, 1, n));
+	return (0);
 }
