@@ -1,17 +1,19 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Practice on argc and argv
- * @argc: Argument count
- * @argv: Argument vector(1D array of strings)
- * Return: 0 on success
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
+	(void) argc;
+	
 	printf("%s\n", argv[0]);
-
-	(void)argc;
 
 	return (0);
 }
