@@ -1,13 +1,12 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - Practice on argc and argv
- * @argc: Argument count
- * @argv: Argument vector(1D array of strings)
- * Return: 0 on success
+ * main - Prints the name of program, followed by a new line
+ * @argc: number of command-line arguments
+ * @argv: list of command-line arguments
+ * Return: 0 Always(success)
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	printf("%s\n", argv[0]);
 
