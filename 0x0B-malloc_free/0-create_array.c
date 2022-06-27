@@ -7,13 +7,13 @@
  * Return: NULL if size is 0
  * Return: Pointer to array or NULL if it fails
  */
-
 char *create_array(unsigned int size, char c)
 {
         char *a;
 
         unsigned int i = 0;
-
+        if (size == 0)
+                return (NULL);
         if (size == 0)
                 return (NULL);
 
@@ -23,6 +23,4 @@ char *create_array(unsigned int size, char c)
                 a[i] = c;
 
         return (a);
-
-        return (NULL);
 }
