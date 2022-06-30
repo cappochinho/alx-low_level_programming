@@ -1,8 +1,9 @@
 #include "main.h"
 
 /*
- * malloc - Allocates memory and returns a pointer to the memory location
- * @n: Size of memory space
+ * malloc_checked - Allocates memory and returns a pointer to the memory
+ * Description: Nothing more to be said
+ * @b: Size of memory space
  *
  * Return: Pointer to memory space
  */
