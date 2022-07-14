@@ -27,7 +27,7 @@ list_t *add(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	while (str_len != '\0')
+	while (str[str_len] != '\0')
 		str_len++;
 
 	new_head->len = str_len;
