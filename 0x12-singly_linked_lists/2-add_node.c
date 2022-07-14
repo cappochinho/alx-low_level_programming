@@ -6,33 +6,31 @@
  * @str: a string literal
  * Return: New node
  */
-
-list_t *add(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
-	int str_len = 0;
-	list_t *new_head;
+	list_t *new_node;
+	int len_str;
 
-	new_head = (list *) malloc(sizeof(list_t));
+	new_node = (list_t *) malloc(sizeof(list_t));
 
-	if (new_head == NULL)
+	if (new_node == NULL)
 	{
-		free(new_head);
+		free(new_node);
 		return (NULL);
 	}
 
-	new_head->str = strdup(str);
-	if (new_head->str == NULL)
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-		free(new_head);
+		free(new_node);
 		return (NULL);
 	}
+	for (len_str = 0; str[len_str] != '\0';  len_str++)
+	;
 
-	while (str[str_len] != '\0')
-		str_len++;
+	new_node->len = len_str;
+	new_node->next = *head;
+	*head = new_node;
 
-	new_head->len = str_len;
-	new_head->next = (*head);
-	(*head) = new_head;
-
-	return (new_head);
+	return (new_node);
 }
