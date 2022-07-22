@@ -13,6 +13,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 	high <<= index;
 	if (high == 0)
 		return (-1);
-	*n |= max;
+	*n |= high;
 	return (1);
 }
